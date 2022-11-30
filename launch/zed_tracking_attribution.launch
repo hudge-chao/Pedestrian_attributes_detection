@@ -1,0 +1,7 @@
+<launch>
+    <!-- zed -->
+    <include file="$(find zed_wrapper)/launch/zed2.launch" />
+    <!-- run bonnet_to_pointcloud node -->
+    <node pkg="human_tracking_paddle" type="inference" name="person_attributions_tracking"></node>
+
+</launch>
